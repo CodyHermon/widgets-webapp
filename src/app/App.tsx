@@ -1,8 +1,12 @@
 import { Accordion } from "../containers/Accordion";
+import { Search } from "../containers/Search";
 
 const App = () =>  {
     return (
-        <Accordion />
+        <div>
+            {/* <Accordion /> */}
+            <Search />
+        </div>
     );
 };
 

@@ -19,6 +19,6 @@ const AccordionContainer = () => {
     return (
         <Accordion items={items} />
     );
-}
+};
 
 export { AccordionContainer as Accordion };
