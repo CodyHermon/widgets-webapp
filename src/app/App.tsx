@@ -1,13 +1,15 @@
 import { Accordion } from "../containers/Accordion";
-import { DropdownWidget } from "../containers/DropdownWidget";
+import { Dropdown } from "../containers/Dropdown";
 import { Search } from "../containers/Search";
+import { Translate } from "../containers/Translate";
 
 const App = () =>  {
     return (
         <div>
-            <Accordion />
+            {/* <Accordion /> */}
             {/* <Search /> */}
-            <DropdownWidget />
+            {/* <Dropdown /> */}
+            <Translate />
         </div>
     );
 };

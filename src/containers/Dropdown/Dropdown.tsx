@@ -1,8 +1,8 @@
 import { useCallback, useState } from "react";
 
-import { DropdownWidget } from "../../components/DropdownWidget";
+import { Dropdown } from "../../components/Dropdown";
 
-const DropdownWidgetContainer = () => {
+const DropdownContainer = () => {
     const options = [
         {
             label: 'The Color Red',
@@ -27,11 +27,13 @@ const DropdownWidgetContainer = () => {
     }, []);
 
     return (
-        <DropdownWidget 
+        <Dropdown
+            label="Select a Color"
             options={filteredOptions}
             onChangeDropdown={onChangeDropdown}
+            selectedItem={selectedItem}
         />
     );
 };
 
-export { DropdownWidgetContainer as DropdownWidget };
+export { DropdownContainer as Dropdown };
