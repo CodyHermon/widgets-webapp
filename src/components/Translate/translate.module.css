@@ -19,9 +19,14 @@
   justify-content: space-between;
   padding: 8px;
   transition: all 100ms;
+  margin-bottom: 20px;
 }
 
 .textInput:focus {
   box-shadow: 0 0 0 2px #2684ff;
   outline: none;
+}
+
+.dropdown {
+  margin-bottom: 30px;
 }

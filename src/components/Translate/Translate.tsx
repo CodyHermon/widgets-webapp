@@ -16,13 +16,13 @@ const Translate = ({ options, language, text, onChangeDropdown, onChangeText }: 
         <label className={classes.inputLabel}>Enter Text</label>
         <input className={classes.textInput} value={text} onChange={onChangeText}/>
         <Dropdown
+            className={classes.dropdown}
             label="Select a Language"
             options={options}
-            selectedItem={language}
             onChangeDropdown={onChangeDropdown}
         />
         <hr />
-        <h3>Output</h3>
+        <h3>Output: </h3>
         <Convert language={language} text={text}/>
     </div>
 );

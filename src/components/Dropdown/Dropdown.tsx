@@ -3,14 +3,15 @@ import Select from 'react-select';
 import classes from './dropdown.module.css';
 
 interface Props {
+    className?: string;
     label: string;
     options: any[];
-    selectedItem: string;
+    selectedItem?: string;
     onChangeDropdown: (e: any) => void;
 }
 
-const Dropdown = ({ label, options, selectedItem, onChangeDropdown }: Props) => (
-    <div>
+const Dropdown = ({ className, label, options, selectedItem, onChangeDropdown }: Props) => (
+    <div className={className}>
         <label className={classes.dropdownLabel}>{label}</label>
         <Select
             className={classes.dropdown}
@@ -26,5 +27,10 @@ const Dropdown = ({ label, options, selectedItem, onChangeDropdown }: Props) => 
         }
     </div>
 );
+
+Dropdown.defaultProps = {
+    className: undefined,
+    selectedItem: undefined
+};
     
 export { Dropdown };
